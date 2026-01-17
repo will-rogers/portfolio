@@ -2,146 +2,142 @@
 <html lang="en">
 <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Basic Page Needs -->
   <meta charset="utf-8">
   <title>{{ site.data.main_info.name }} | {{ page.title }}</title>
   <meta name="description" content="Will Rogers">
   <meta name="author" content="Will Rogers">
-  <meta property="og:title" content="Will Rogers" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://www.will-rogers.github.io" />
-  <meta property="og:site_name" content="Will Rogers" />
-  <link rel="canonical" href="http://www.will-rogers.github.io" />
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta property="og:title" content="Will Rogers">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://will-rogers.github.io/portfolio/">
+  <meta property="og:site_name" content="Will Rogers">
+
+  <link rel="canonical" href="https://will-rogers.github.io/portfolio/">
+
+  <!-- Mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href={{ "/libs/external/skeleton/normalize.css" | prepend: site.baseurl }}>
-  <link rel="stylesheet" href={{ "/libs/external/skeleton/skeleton.css" | prepend: site.baseurl }}>
-  <link rel="stylesheet" href={{ "/libs/custom/my_css.css" | prepend: site.baseurl }}>
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ '/libs/external/skeleton/normalize.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/libs/external/skeleton/skeleton.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/libs/custom/my_css.css' | relative_url }}">
 
-  <!-- JQuery
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src={{ "/libs/external/jquery-3.1.1.min.js" | prepend: site.baseurl }}></script>
+  <!-- jQuery -->
+  <script src="{{ '/libs/external/jquery-3.1.1.min.js' | relative_url }}"></script>
 
-  <!-- Font-Awesome
-  –––––––––––––––––––––––––––––––––––––––––––––––––– 
-  <link rel="stylesheet" href={{ "/libs/external/font-awesome-4.7.0/css/font-awesome.min.css" | prepend: site.baseurl }}> -->
-  <link rel="stylesheet" href={{ "/libs/external/fontawesome-free-6.6.0-web/css/all.min.css" | prepend: site.baseurl }}>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{{ '/libs/external/fontawesome-free-6.6.0-web/css/all.min.css' | relative_url }}">
 
-  <!-- Academicons
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href={{ "/libs/external/academicons-1.8.6/css/academicons.min.css" | prepend: site.baseurl }}>
+  <!-- Academicons -->
+  <link rel="stylesheet" href="{{ '/libs/external/academicons-1.8.6/css/academicons.min.css' | relative_url }}">
 
-  <!-- Skeleton tabs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href={{ "/libs/external/skeleton_tabs/skeleton-tabs.css" | prepend: site.baseurl }}>
-  <script src={{ "/libs/external/skeleton_tabs/skeleton-tabs.js" | prepend: site.baseurl }}></script>
+  <!-- Skeleton tabs -->
+  <link rel="stylesheet" href="{{ '/libs/external/skeleton_tabs/skeleton-tabs.css' | relative_url }}">
+  <script src="{{ '/libs/external/skeleton_tabs/skeleton-tabs.js' | relative_url }}"></script>
 
-  <!-- Timeline
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href={{ "/libs/external/timeline.css" | prepend: site.baseurl }}>
+  <!-- Timeline -->
+  <link rel="stylesheet" href="{{ '/libs/external/timeline.css' | relative_url }}">
 
-  <!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!--<link rel="stylesheet" href={{ "/libs/external/github-prettify-theme.css" | prepend: site.baseurl }}>-->
-  <script src={{ "/libs/custom/my_js.js" | prepend: site.baseurl }}></script>
+  <!-- Custom JS -->
+  <script src="{{ '/libs/custom/my_js.js' | relative_url }}"></script>
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href={{ "/libs/icon.png" | prepend: site.baseurl }}>
-  <link rel="shortcut icon" type="image/png" href={{ "/libs/icon.png" | prepend: site.baseurl }}>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="{{ '/libs/icon.png' | relative_url }}">
+  <link rel="shortcut icon" type="image/png" href="{{ '/libs/icon.png' | relative_url }}">
 
 </head>
+
 <body>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
 
     <section class="header">
       <div class="row">
         <div class="three columns">
-          <a href="{{ site.baseurl }}/"><img class="u-max-full-width" src="{{ '/assets/profile-pics/med_profile2.png' | relative_url }}" alt="Will Rogers profile photo"></a>
+          <a href="{{ '/' | relative_url }}">
+            <img class="u-max-full-width"
+                 src="{{ '/assets/profile-pics/med_profile2.png' | relative_url }}"
+                 alt="Will Rogers profile photo">
+          </a>
         </div>
+
         <div class="nine columns main-description">
-            <h1>{{ site.data.main_info.name }}</h1>
-            <p>{{ site.data.main_info.title }}</p>
-            <p>{{ site.data.main_info.email }}</p>
-            <p>
-              <span onclick="window.open('{{ site.data.main_info.bsky }}')" style="cursor: pointer">
-                <i class="fa-brands fa-bluesky" style="padding-top: 10px"></i>
-              </span>
+          <h1>{{ site.data.main_info.name }}</h1>
+          <p>{{ site.data.main_info.title }}</p>
+          <p>{{ site.data.main_info.email }}</p>
 
-              <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
-                <i class="fa-brands fa-twitter fa-lg"></i>
-              </span>
+          <p>
+            <span onclick="window.open('{{ site.data.main_info.bsky }}')" style="cursor:pointer">
+              <i class="fa-brands fa-bluesky"></i>
+            </span>
 
-              <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
-                <i class="fa-brands fa-linkedin fa-lg"></i>
-              </span>
+            <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor:pointer">
+              <i class="fa-brands fa-twitter"></i>
+            </span>
 
-              <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
-                <i class="fa-brands fa-github fa-lg"></i>
-              </span>
+            <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor:pointer">
+              <i class="fa-brands fa-linkedin"></i>
+            </span>
 
-              <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
-                <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
-              </span>
-            </p>
+            <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor:pointer">
+              <i class="fa-brands fa-github"></i>
+            </span>
+
+            <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor:pointer">
+              <i class="ai ai-google-scholar"></i>
+            </span>
+          </p>
         </div>
       </div>
     </section>
 
     <div class="navbar-spacer"></div>
+
     <nav class="navbar">
       <div class="container">
         <ul class="navbar-list">
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#bio" | prepend: site.baseurl }}>Bio</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#publications" | prepend: site.baseurl }}>Publications</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#projects" | prepend: site.baseurl }}>Projects</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#resume" | prepend: site.baseurl }}>Vita</a></li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="{{ '/index.html#bio' | relative_url }}">Bio</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="{{ '/index.html#publications' | relative_url }}">Publications</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="{{ '/index.html#projects' | relative_url }}">Projects</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="{{ '/index.html#resume' | relative_url }}">Vita</a>
+          </li>
         </ul>
       </div>
     </nav>
 
-    {{ content}}
+    {{ content }}
 
     <div class="footer">
       <div class="row">
-        <div class="four columns">
-          {{ site.data.main_info.name }}
-        </div>
-        <div class="four columns">
-          {{ site.data.main_info.email }}
-        </div>
-        <div class="four columns">
-          <span onclick="window.open('{{ site.data.main_info.bsky }}')" style="cursor: pointer">
-            <i class="fa-brands fa-bluesky fa-sm" style="padding-top: 10px"></i>
-          </span>
+        <div class="four columns">{{ site.data.main_info.name }}</div>
+        <div class="four columns">{{ site.data.main_info.email }}</div>
 
-          <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
+        <div class="four columns">
+          <span onclick="window.open('{{ site.data.main_info.bsky }}')" style="cursor:pointer">
+            <i class="fa-brands fa-bluesky"></i>
+          </span>
+          <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor:pointer">
             <i class="fa-brands fa-twitter"></i>
           </span>
-
-          <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
+          <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor:pointer">
             <i class="fa-brands fa-linkedin"></i>
           </span>
-
-          <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
+          <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor:pointer">
             <i class="fa-brands fa-github"></i>
           </span>
-
-          <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
-            <i class="ai ai-google-scholar" aria-hidden="true"></i>
+          <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor:pointer">
+            <i class="ai ai-google-scholar"></i>
           </span>
         </div>
       </div>
@@ -149,10 +145,5 @@
 
   </div>
 
-  <!-- do not remove -->
-  <span id="62cd7b7da1aff3196fdc26b60e396df9"></span>
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>

@@ -1,6 +1,3 @@
-source:      .
-destination: ./_site
-includes:    ./_includes
 url: "https://will-rogers.github.io"
 baseurl: ""
 

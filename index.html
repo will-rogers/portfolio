@@ -52,9 +52,9 @@ title: Home
   </p>
 
   <ul class="tab-nav">
-    <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
+    <li><div class="button active" data-ref="#papers-published">Published</div></li>
     <li><div class="button active" data-ref="#papers-review">In Review</div></li>
-    <li><div class="button active" data-ref="#papers-review">Preprint</div></li>
+    <li><div class="button active" data-ref="#papers-preprint">Pre-print</div></li>
     <li><div class="button" data-ref="#papers-all">All</div></li>
   </ul>
 
@@ -72,8 +72,8 @@ title: Home
             {% endif %}
 
             {% if paper.doi %}
-                    <a href="{{ paper.doi }}" class="btn btn-paper" target="_blank">Dot</a>
-                  {% endif %}
+              <a class="button" href="{{ paper.doi }}" target="_blank">Link</a>
+            {% endif %}
 
             {% if paper.code %}
               <a class="button" href="{{ paper.code }}" target="_blank">Code</a>

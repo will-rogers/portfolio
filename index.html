@@ -48,7 +48,8 @@ title: Home
   <h4>Publications</h4>
 
   <p>This may not be the most complete or up-to-date so please check out my <a href="{{ https://scholar.google.com/citations?user=TWc4vkkAAAAJ&hl=en&authuser=2 }}" target="_blank">Google Scholar</a> or <a href="{{ https://orcid.org/my-orcid?orcid=0000-0001-9899-8064 }}" target="_blank">ORCID</a>.<br/>
-  <sup>‡</sup> indicates equal contribution.
+  <sup>‡</sup> indicates equal contribution.<br/>
+  <sup>§</sup> indicates supervised student.<br/>
   </p>
 
   <ul class="tab-nav">
@@ -91,8 +92,8 @@ title: Home
 
     <div class="tab-content">
     <div class="tab-pane" id="papers-published">
-      {% assign selected_papers = site.data.publications.papers | where: "published", "y" %}
-      {% for paper in selected_papers %}
+      {% assign published_papers = site.data.publications.papers | where: "published", "y" %}
+      {% for paper in published_papers %}
         <div class="paper">
           <p class="title"><b>{{ paper.title }}</b></p>
           <p>{{ paper.authors }}</p>
@@ -121,8 +122,8 @@ title: Home
 
     <div class="tab-content">
     <div class="tab-pane" id="papers-review">
-      {% assign selected_papers = site.data.publications.papers | where: "review", "y" %}
-      {% for paper in selected_papers %}
+      {% assign review_papers = site.data.publications.papers | where: "review", "y" %}
+      {% for paper in review_papers %}
         <div class="paper">
           <p class="title"><b>{{ paper.title }}</b></p>
           <p>{{ paper.authors }}</p>
@@ -151,8 +152,8 @@ title: Home
 
     <div class="tab-content">
     <div class="tab-pane" id="papers-preprint">
-      {% assign selected_papers = site.data.publications.papers | where: "preprint", "y" %}
-      {% for paper in selected_papers %}
+      {% assign preprint_papers = site.data.publications.papers | where: "preprint", "y" %}
+      {% for paper in preprint_papers %}
         <div class="paper">
           <p class="title"><b>{{ paper.title }}</b></p>
           <p>{{ paper.authors }}</p>

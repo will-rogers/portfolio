@@ -61,7 +61,7 @@ h4 {
 .parallax {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
-  height: 70vh;
+  height: 35vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
